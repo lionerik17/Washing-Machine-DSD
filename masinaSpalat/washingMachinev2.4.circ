@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="south"/>
+    </tool>
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </tool>
+    <tool name="Bit Extender">
+      <a name="in_width" val="64"/>
+      <a name="out_width" val="64"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="downloadBoard" val="NEXYS4_DDR (1)"/>
+    <a name="simulationFrequency" val="1000.0"/>
+    <comp lib="0" loc="(1000,540)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="g1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1000,590)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="g2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1000,650)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="g3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1010,540)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="f1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1010,590)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="f2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1010,650)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="f3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1020,540)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="e1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1020,590)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="e2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1020,650)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="e3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1030,540)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="d1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1030,590)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="d2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1030,650)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="d3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1040,540)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="c1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1040,590)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="c2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1040,650)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="c3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1050,540)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="b1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1050,590)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="b2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1050,650)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="b3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1060,540)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="a1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1060,590)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="a2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(1060,650)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="a3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(130,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_4"/>
+    </comp>
+    <comp lib="0" loc="(130,150)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="presp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(130,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_5"/>
+    </comp>
+    <comp lib="0" loc="(130,170)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="clatS"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(130,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="g1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(130,300)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="e1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(130,70)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_2"/>
+    </comp>
+    <comp lib="0" loc="(130,70)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="usa"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(130,90)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_3"/>
+    </comp>
+    <comp lib="0" loc="(130,90)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="an"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(140,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="f1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(140,300)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="d1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(150,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="a1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(150,300)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="c1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(160,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="b1"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(160,300)" name="Ground"/>
+    <comp lib="0" loc="(170,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="g2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(170,300)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="e2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(180,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="f2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(180,300)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="d2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(190,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="a2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(190,300)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="c2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(200,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="b2"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(200,300)" name="Ground"/>
+    <comp lib="0" loc="(210,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="g3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(210,300)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="e3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(220,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="f3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(220,300)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="d3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(230,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="a3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(230,300)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="c3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(240,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="b3"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(240,300)" name="Ground"/>
+    <comp lib="0" loc="(260,350)" name="Tunnel">
+      <a name="label" val="clk"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(260,590)" name="Tunnel">
+      <a name="label" val="timpSpalare"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="0" loc="(260,610)" name="Tunnel">
+      <a name="label" val="timpPrespalare"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="0" loc="(40,350)" name="Clock"/>
+    <comp lib="0" loc="(40,420)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="temp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(40,440)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="en"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(40,460)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="mode"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(40,480)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="modS"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(40,500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="presp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(40,520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clatS"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(40,590)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="temp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(40,610)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="en"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(40,630)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="mode"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(40,650)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="modS"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(40,670)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="presp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,230)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="gtPresp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,250)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="gtSpalare"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="gtClatire"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="gtClatireSupl"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,30)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="gtCentrifuga"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,440)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="timpSpalare"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="0" loc="(440,460)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="timpPrespalare"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="9"/>
+    </comp>
+    <comp lib="0" loc="(440,480)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="en"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="usa"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="an"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,540)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="enPresp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="enSpalare"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,580)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="enClatire"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,600)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="enClatireSupl"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,620)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="enCentrifuga"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,640)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="gataS"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,660)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="gtUsa"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,680)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="temp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(440,700)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="vit"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(440,720)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="presp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,740)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clatS"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,760)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="mode"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(440,780)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="modS"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,830)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(440,850)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="enUsa"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(50,210)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_6"/>
+    </comp>
+    <comp lib="0" loc="(50,210)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="modS"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(50,50)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_1"/>
+    </comp>
+    <comp lib="0" loc="(50,50)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="en"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(60,110)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_bus_1"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(60,110)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="temp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(60,130)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_bus_2"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(60,130)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="vit"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(660,110)" name="Tunnel">
+      <a name="label" val="enCentrifuga"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,130)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Output_1"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(660,130)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="gataS"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,30)" name="Tunnel">
+      <a name="label" val="enPresp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,420)" name="Tunnel">
+      <a name="label" val="gtPresp"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,440)" name="Tunnel">
+      <a name="label" val="gtSpalare"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,460)" name="Tunnel">
+      <a name="label" val="gtClatire"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,480)" name="Tunnel">
+      <a name="label" val="gtClatireSupl"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,50)" name="Tunnel">
+      <a name="label" val="enSpalare"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,500)" name="Tunnel">
+      <a name="label" val="gtCentrifuga"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,520)" name="Tunnel">
+      <a name="label" val="enUsa"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,70)" name="Tunnel">
+      <a name="label" val="enClatire"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,830)" name="Tunnel">
+      <a name="label" val="gtUsa"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(660,90)" name="Tunnel">
+      <a name="label" val="enClatireSupl"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+    </comp>
+    <comp lib="0" loc="(70,190)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="Input_bus_3"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(70,190)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="mode"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(750,520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="sute"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(750,570)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="zeci"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(750,630)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="unitati"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(970,400)" name="Tunnel">
+      <a name="label" val="sute"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(970,420)" name="Tunnel">
+      <a name="label" val="zeci"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(970,440)" name="Tunnel">
+      <a name="label" val="unitati"/>
+      <a name="labelfont" val="SansSerif bold 7"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(990,520)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="0" loc="(990,570)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="0" loc="(990,630)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="5" loc="(130,240)" name="7-Segment Display">
+      <a name="bg" val="#000000"/>
+      <a name="color" val="#ff0000"/>
+      <a name="label" val="L_7_Segment_Display_1"/>
+      <a name="offcolor" val="#000000"/>
+    </comp>
+    <comp lib="5" loc="(170,240)" name="7-Segment Display">
+      <a name="bg" val="#000000"/>
+      <a name="color" val="#ff0000"/>
+      <a name="label" val="L_7_Segment_Display_2"/>
+      <a name="offcolor" val="#000000"/>
+    </comp>
+    <comp lib="5" loc="(210,240)" name="7-Segment Display">
+      <a name="bg" val="#000000"/>
+      <a name="color" val="#ff0000"/>
+      <a name="label" val="L_7_Segment_Display_3"/>
+      <a name="offcolor" val="#000000"/>
+    </comp>
+    <comp loc="(260,350)" name="DivizorFrecv">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(260,420)" name="DecoderTime">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="decodertime_1"/>
+    </comp>
+    <comp loc="(260,590)" name="DecoderTemp">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="decodertemp_1"/>
+    </comp>
+    <comp loc="(660,30)" name="UnitateCentrala">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(660,400)" name="UnitateExecutie">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(660,830)" name="Timer60">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="timer60_1"/>
+    </comp>
+    <comp loc="(970,400)" name="BitsToSZU">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="bitstoszu_1"/>
+    </comp>
+    <comp loc="(970,520)" name="SegFault">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="segfault_1"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(970,570)" name="SegFault">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="segfault_2"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(970,630)" name="SegFault">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="segfault_3"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <wire from="(130,150)" to="(440,150)"/>
+    <wire from="(130,170)" to="(440,170)"/>
+    <wire from="(130,70)" to="(440,70)"/>
+    <wire from="(130,90)" to="(440,90)"/>
+    <wire from="(260,420)" to="(440,420)"/>
+    <wire from="(50,210)" to="(440,210)"/>
+    <wire from="(50,50)" to="(440,50)"/>
+    <wire from="(60,110)" to="(440,110)"/>
+    <wire from="(60,130)" to="(440,130)"/>
+    <wire from="(660,400)" to="(750,400)"/>
+    <wire from="(70,190)" to="(440,190)"/>
+    <wire from="(970,520)" to="(990,520)"/>
+    <wire from="(970,570)" to="(990,570)"/>
+    <wire from="(970,630)" to="(990,630)"/>
+  </circuit>
+  <vhdl name="UnitateCentrala">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+ENTITY UnitateCentrala IS
+  PORT (
+  	-- intrari ale UC
+  	clock, start, usa, anulare: in std_logic;
+  	temperatura: in std_logic_vector(1 downto 0);
+  	viteza: in std_logic_vector(1 downto 0);
+  	prespalare: in std_logic;
+  	clatireSuplimentara: in std_logic;
+  	mode: in std_logic_vector (2 downto 0);
+	modSelectie: in std_logic;
+	-- iesiri de la UC pentru UE
+ 	enPrespalare, enSpalare, enClatire, enClatireSuplimentara, enCentrifuga: out std_logic;
+	-- iesiri de la UE pentru UC
+ 	gtPrespalare, gtSpalare, gtClatire, gtClatireSuplimentara, gtCentrifuga: in std_logic;
+
+ 	--iesire UC
+ 	gataSpalare: out std_logic
+    );
+END UnitateCentrala;
+
+ARCHITECTURE turaDeSpalat OF UnitateCentrala IS
+
+type State_T is (A_Idle, B_Prespalare, B_Spalare, C_Clatire, C_ClatireSuplimentara, D_Centrifuga, E_Gata);
+signal State, nextState: State_T;
+signal vitezaSelectata, rot: integer :=0;
+signal spalare2, clatire2: integer :=0;
+signal gata: integer :=0;
+
+-- A -&gt; idle, setari predefinite, setari manuale
+-- B -&gt; spalare/prespalare
+-- C -&gt; clatire
+-- D -&gt; centrifuga
+-- E -&gt; gata
+
+-- moduri de spalare
+-- 000 - spalare rapida
+-- 001 - camasi
+-- 010 - culori inchise
+-- 011 - rufe murdare
+-- 100 - antialergic
+
+-- temperatura
+-- 00 - 30
+-- 01 - 40
+-- 10 - 60
+-- 11 - 90
+
+-- modSelectie
+-- 0, manual
+-- 1, automat
+
+BEGIN
+
+-- dam update la stare
+Update: process(clock, anulare)
+		begin
+			if(anulare = '1') then
+				State &lt;= A_Idle;
+			elsif (rising_edge(clock)) then
+				State &lt;= NextState;
+			end if;
+		end process Update;
+
+-- vezi organigrama
+Transitions: process(start, anulare, usa, viteza, mode, modSelectie, prespalare, spalare2, clatireSuplimentara, clatire2, State, gtPrespalare, gtSpalare, gtClatire, gtClatireSuplimentara, gtCentrifuga)
+			begin
+				if(anulare = '1') then nextState &lt;= A_Idle;
+				else
+				case State is
+					when A_Idle =&gt;
+					if(start = '1' and usa= '1' and (prespalare = '1' or spalare2 = 1)) then nextState &lt;= B_Prespalare;
+					elsif (start ='1' and usa = '1' and (prespalare = '0' or spalare2 = 0)) then nextState &lt;= B_Spalare;
+					else nextState &lt;= A_Idle;
+					end if;
+
+					when B_Prespalare =&gt;
+					if(gtPrespalare = '1') then nextState &lt;= B_Spalare;
+					else nextState &lt;= B_Prespalare;
+					end if;
+
+					when B_Spalare =&gt;
+					if(gtSpalare = '1') then nextState &lt;= C_Clatire;
+					else nextState &lt;= B_Spalare;
+					end if;
+					
+					when C_Clatire =&gt;
+					if(gtClatire = '1' and (clatireSuplimentara = '1' or clatire2 = 1)) then nextState &lt;= C_ClatireSuplimentara;
+					elsif(gtClatire = '1' and (clatireSuplimentara = '0' or clatire2 = 0)) then nextState &lt;= D_Centrifuga;
+					else nextState&lt;=C_Clatire;
+					end if;
+
+					when C_ClatireSuplimentara =&gt;
+					if(gtClatireSuplimentara = '1') then nextState &lt;= D_Centrifuga;
+					else nextState &lt;= C_ClatireSuplimentara;
+					end if;
+					
+					when D_Centrifuga =&gt;
+					if(gtCentrifuga = '1') then nextState &lt;= E_Gata;
+					else nextState &lt;= D_Centrifuga;
+					end if;
+
+					when E_Gata =&gt;
+					nextState &lt;= A_Idle;
+				end case;
+				end if;
+			end process Transitions;
+
+-- vezi relatii UC-UE
+Outputs: process(start, anulare, viteza, usa, mode, modSelectie, prespalare, spalare2, clatireSuplimentara, clatire2, State, gtPrespalare, gtSpalare, gtClatire, gtClatireSuplimentara, gtCentrifuga)
+		begin
+			case State is
+				when A_Idle =&gt;
+				vitezaSelectata &lt;= 0; rot &lt;= 0;
+				enPrespalare&lt;='0'; enSpalare&lt;='0'; enClatire &lt;='0'; enClatireSuplimentara&lt;='0'; enCentrifuga&lt;='0';
+				if(gata = 0 or anulare = '1') then 
+					gataSpalare &lt;= '0'; gata &lt;= 0;
+					spalare2 &lt;= 0; clatire2 &lt;= 0;
+				end if;
+				
+				if(modSelectie = '1') then
+					if(to_integer(unsigned(mode)) = 0) then vitezaSelectata &lt;= 1200;
+					elsif(to_integer(unsigned(mode)) = 1) then vitezaSelectata &lt;= 800;
+					elsif(to_integer(unsigned(mode)) = 2) then vitezaSelectata &lt;= 1000; clatire2 &lt;= 1;
+					elsif(to_integer(unsigned(mode)) = 3) then vitezaSelectata &lt;= 1000; spalare2 &lt;= 1;
+					elsif(to_integer(unsigned(mode)) = 4) then vitezaSelectata &lt;= 1200; clatire2 &lt;= 1;
+					end if;
+				else
+					if(viteza = 0) then vitezaSelectata &lt;= 800;
+					elsif(viteza = 1) then vitezaSelectata &lt;= 1000;
+					elsif(viteza = 2) then vitezaSelectata &lt;= 1200;
+					end if;
+				end if;
+	
+				when B_Prespalare =&gt;
+				if(prespalare = '1' or spalare2 = 1) then
+					enPrespalare &lt;= '1'; rot &lt;= 60;
+				end if;
+
+				when B_Spalare =&gt;
+				if(gata = 0) then enSpalare&lt;='1'; rot &lt;= 60; end if;
+				
+				when C_Clatire =&gt;
+				if(gata = 0) then enClatire &lt;= '1'; rot &lt;= 120; end if; -- enClatire
+
+				when C_ClatireSuplimentara =&gt;
+				if(clatireSuplimentara = '1' or clatire2 = 1) then 
+					if(gata = 0) then enClatireSuplimentara &lt;= '1'; rot &lt;= 120; end if; -- enClatireSuplimentara
+				end if;
+	
+				when D_Centrifuga =&gt;
+				if(gata = 0) then enCentrifuga &lt;= '1'; rot &lt;= vitezaSelectata; end if;
+			
+				when E_Gata =&gt;
+				if(gata = 0) then gataSpalare &lt;= '1'; gata &lt;= 1; rot &lt;= 0; end if;
+			end case;
+		end process Outputs;
+
+END turaDeSpalat;</vhdl>
+  <vhdl name="UnitateExecutie">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+ENTITY UnitateExecutie IS
+  PORT (
+  	clk: in std_logic;
+  	time: in std_logic_vector(8 downto 0);
+  	timeSpalare, timePrespalare: in std_logic_vector(8 downto 0);
+  	start, usa, anulare: in std_logic;
+  	enPrespalare, enSpalare, enClatire, enClatireSuplimentara, enCentrifuga, gataSpalare, gataUsa: in std_logic;
+  	temperatura, viteza: in std_logic_vector(1 downto 0);
+  	prespalare, clatireSuplimentara: in std_logic;
+  	mode: in std_logic_vector(2 downto 0);
+  	modSelectie: in std_logic;
+  	
+  	
+  	elapsedTime: out std_logic_vector(8 downto 0);
+  	gtPrespalare, gtSpalare, gtClatire, gtClatireSuplimentara, gtCentrifuga, enT60: out std_logic
+    );
+END UnitateExecutie;
+
+-- instead of using 11 timers like in v1.0, I implemented one single timer that is similar to the CU
+-- 5 variables to count all the washing stages
+-- formula for time determined in DecoderTime
+-- formula for spalare and prespalare determined in DecoderTemp
+
+ARCHITECTURE TypeArchitecture OF UnitateExecutie IS
+
+signal tempSel, vitSel, modeSel: integer:=0;
+signal prespSel, clatSel, modSelSel: std_logic;
+BEGIN
+
+process(tempSel, vitSel, modeSel, modSelSel, prespSel, clatSel, clk, time, timeSpalare, timePrespalare, start, usa, anulare, enPrespalare, enSpalare, enClatire, enClatireSuplimentara, enCentrifuga, gataSpalare, gataUsa, prespalare, clatireSuplimentara, modSelectie, mode)
+
+variable count: integer :=0;
+variable stop: integer :=0;
+variable started: integer :=0;
+variable countPrespalare, countSpalare, countClatire, countClatireSuplimentara, countCentrifuga: integer :=0;
+
+begin
+if(rising_edge(clk)) then
+	tempSel &lt;= to_integer(unsigned(temperatura));
+	vitSel &lt;= to_integer(unsigned(viteza));
+	modeSel &lt;= to_integer(unsigned(mode));
+	prespSel &lt;= prespalare;
+	clatSel &lt;= clatireSuplimentara;
+	modSelSel &lt;= modSelectie;
+
+	if(vitSel = 3) then
+		count:=-1; stop:=0;
+		countPrespalare:=0; countSpalare:=0; countClatire:=0; countClatireSuplimentara:=0; countCentrifuga:=0;
+		gtPrespalare&lt;='0'; gtSpalare&lt;='0'; gtClatire&lt;='0'; gtClatireSuplimentara&lt;='0'; gtCentrifuga&lt;='0'; enT60 &lt;= '0';
+	end if;
+	
+	if(anulare = '1' or gataSpalare = '1' or start = '0' or usa = '0') then
+		count:=0; stop:=0;
+		countPrespalare:=0; countSpalare:=0; countClatire:=0; countClatireSuplimentara:=0; countCentrifuga:=0;
+		gtPrespalare&lt;='0'; gtSpalare&lt;='0'; gtClatire&lt;='0'; gtClatireSuplimentara&lt;='0'; gtCentrifuga&lt;='0'; enT60 &lt;= '0';
+	end if;
+	if(start = '1' and usa = '1') then
+		if(count &gt; 0) then
+			if(tempSel /= temperatura or vitSel /= viteza or modeSel /= mode or
+			   prespSel /= prespalare or clatSel /= clatireSuplimentara or modSelSel /= modSelectie) then
+			   count:=-2; stop:=0;
+			   countPrespalare:=0; countSpalare:=0; countClatire:=0; countClatireSuplimentara:=0; countCentrifuga:=0;
+		        gtPrespalare&lt;='0'; gtSpalare&lt;='0'; gtClatire&lt;='0'; gtClatireSuplimentara&lt;='0'; gtCentrifuga&lt;='0'; enT60 &lt;= '0';
+			end if;
+		end if;
+		if(count = to_integer(unsigned(time)) and stop = 0) then
+			enT60 &lt;= '1';
+			if(gataUsa = '1') then gtCentrifuga &lt;= '1'; stop :=1;
+			end if;
+		elsif(stop = 0) then
+			if(enPrespalare = '1') then 
+				if(countPrespalare = timePrespalare) then gtPrespalare &lt;= '1';
+				elsif(gataSpalare = '0' and anulare = '0') then countPrespalare := countPrespalare + 1; count := count + 1;
+				end if;
+			end if;
+			if(enSpalare = '1') then 
+				if(countSpalare = timeSpalare) then gtSpalare &lt;= '1'; 
+				elsif(gataSpalare = '0' and anulare = '0') then  countSpalare := countSpalare + 1; count := count + 1;
+				end if; 
+			end if;
+			if(enClatire = '1') then 
+				if(countClatire = 10) then gtClatire &lt;='1';
+				elsif(gataSpalare = '0' and anulare = '0') then  countClatire := countClatire + 1; count := count + 1;
+				end if; 
+			end if;
+			if(enClatireSuplimentara = '1') then
+				if(countClatireSuplimentara = 10) then gtClatireSuplimentara &lt;= '1';
+				elsif(gataSpalare = '0' and anulare = '0') then  countClatireSuplimentara := countClatireSuplimentara + 1; count := count + 1;
+				end if;
+			end if;
+			if(enCentrifuga = '1') then
+				if(gataSpalare = '0' and anulare = '0') then  countCentrifuga := countCentrifuga + 1; count := count + 1;
+				end if;
+			end if; 
+		end if;
+	end if;
+end if;
+	if(stop = 1 or gataSpalare = '1') then elapsedTime &lt;= "000000000";
+	else elapsedTime &lt;= std_logic_vector(to_unsigned(to_integer(unsigned(time))-count, elapsedTime'length));
+	end if;
+end process;
+
+END TypeArchitecture;
+
+
+</vhdl>
+  <vhdl name="DecoderTime">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+ENTITY DecoderTime IS
+  PORT (
+  	inTemp: in std_logic_vector(1 downto 0);
+  	enable: in std_logic;
+  	mode: in std_logic_vector(2 downto 0);
+  	modSelectie: in std_logic;
+	prespalare: in std_logic;
+	clatireSuplimentara: in std_logic;
+
+  	outTimp: out std_logic_vector(8 downto 0)
+    );
+END DecoderTime;
+
+--temperatura
+--00 - 30
+--01 - 40
+--10 - 60
+--11 - 90
+
+-- decodificator care calculeaza timpul unui ciclu de spalare in functie de temperatura
+-- util pt TimerK
+
+ARCHITECTURE TypeArchitecture OF DecoderTime IS
+
+BEGIN
+
+-- Timp spalare: 2 * inTemp - 10 + (2 * inTemp - 20, if prespalare) +10 (+10, if clatireSuplimentara) + 10
+
+-- Timp total normal: 2 * inTemp + 10
+-- Timp total prespalare, nu clatire: 4 * inTemp - 10
+-- Timp total nu prespalare, clatire: 2 * inTemp +20
+-- Timp total prespalare, clatire: 4 * inTemp
+
+--0, manual
+--1, automat
+
+process(inTemp, enable, mode, modSelectie, prespalare, clatireSuplimentara)
+begin
+	if(enable = '1' and modSelectie ='0') then
+		case inTemp is
+		when "00" =&gt; --temp 30
+		if(prespalare = '0' and clatireSuplimentara = '0') then outTimp &lt;="001000110";
+		elsif(prespalare = '1' and clatireSuplimentara = '0') then outTimp &lt;="001101110";
+		elsif(prespalare = '0' and clatireSuplimentara = '1') then outTimp &lt;="001010000";
+		elsif(prespalare = '1' and clatireSuplimentara = '1') then outTimp &lt;="001111000";
+		end if;
+		
+		when "01" =&gt; -- temp 40
+		if(prespalare = '0' and clatireSuplimentara = '0') then outTimp &lt;="001011010";
+		elsif(prespalare = '1' and clatireSuplimentara = '0') then outTimp &lt;="010010110";
+		elsif(prespalare = '0' and clatireSuplimentara = '1') then outTimp &lt;="001100100";
+		elsif(prespalare = '1' and clatireSuplimentara = '1') then outTimp &lt;="010100000";
+		end if;
+		
+		when "10" =&gt; -- temp 60
+		if(prespalare = '0' and clatireSuplimentara = '0') then outTimp &lt;="010000010";
+		elsif(prespalare = '1' and clatireSuplimentara = '0') then outTimp &lt;="011100110";
+		elsif(prespalare = '0' and clatireSuplimentara = '1') then outTimp &lt;="010001100";
+		elsif(prespalare = '1' and clatireSuplimentara = '1') then outTimp &lt;="011110000";
+		end if;
+		
+		when "11" =&gt; -- temp 90
+		if(prespalare = '0' and clatireSuplimentara = '0') then outTimp &lt;="010111110";
+		elsif(prespalare = '1' and clatireSuplimentara = '0') then outTimp &lt;="101011110";
+		elsif(prespalare = '0' and clatireSuplimentara = '1') then outTimp &lt;="011001000";
+		elsif(prespalare = '1' and clatireSuplimentara = '1') then outTimp &lt;="101101000";
+		end if;
+		
+		when others =&gt; outTimp&lt;="000000000";
+		end case;
+	elsif(enable = '1' and modSelectie = '1') then
+		case mode is
+		when "000" =&gt; outTimp&lt;="001000110"; -- temp 30
+		when "001" =&gt; outTimp&lt;="010000010"; -- temp 60
+		when "010" =&gt; outTimp&lt;="001100100"; -- temp 40, clatireSupl
+		when "011" =&gt; outTimp&lt;="010010110"; -- temp 40, prespalare
+		when "100" =&gt; outTimp&lt;="011001000"; -- temp 90, clatireSupl
+		when others =&gt; outTimp&lt;="000000000";
+		end case;
+	end if;
+end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="DecoderTemp">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+ENTITY DecoderTemp IS
+  PORT (
+  	inTemp: in std_logic_vector(1 downto 0);
+  	enable: in std_logic;
+  	mode: in std_logic_vector(2 downto 0);
+  	modSelectie: in std_logic;
+  	prespalare: in std_logic;
+
+  	outTimpSpalare: out std_logic_vector(8 downto 0);
+  	outTimpPrespalare: out std_logic_vector(8 downto 0)
+    );
+END DecoderTemp;
+
+-- Calculates the time for spalare and prespalare using formula spalare and formula prespalare
+-- Formula spalare : 2 * inTemp - 10 for spalare
+-- Formula prespalare : 2 * inTemp - 20 for prespalare
+-- util for TimerK
+
+--temperatura
+--00 - 30
+--01 - 40
+--10 - 60
+--11 - 90
+
+--0, mod manual
+--1, mod automat
+
+ARCHITECTURE TypeArchitecture of DecoderTemp is
+
+BEGIN
+
+process(inTemp, enable, mode, modSelectie, prespalare)
+begin
+	if(enable = '1' and modSelectie ='0') then
+		case inTemp is
+		when "00" =&gt; --temp 30
+		outTimpSpalare &lt;="000110010";
+		outTimpPrespalare&lt;="111111111"; 
+		if(prespalare = '1') then outTimpPrespalare &lt;="000101000"; end if;
+		
+		when "01" =&gt; -- temp 40
+		outTimpSpalare &lt;="001000110";
+		outTimpPrespalare&lt;="111111111"; 
+		if(prespalare = '1') then outTimpPrespalare &lt;="000111100"; end if; 
+		
+		when "10" =&gt; -- temp 60
+		outTimpSpalare &lt;="001101110";
+		outTimpPrespalare&lt;="111111111";
+		if(prespalare = '1') then outTimpPrespalare &lt;="001100100"; end if;
+		
+		when "11" =&gt; -- temp 90
+		outTimpSpalare &lt;="010101010";
+		outTimpPrespalare&lt;="111111111";
+		if(prespalare = '1') then outTimpPrespalare &lt;="010100000"; end if;
+		
+		when others =&gt; outTimpSpalare&lt;="111111111"; outTimpPrespalare&lt;="111111111";
+		end case;
+	elsif(enable = '1' and modSelectie = '1') then
+		case mode is
+		when "000" =&gt; outTimpSpalare &lt;="000110010"; outTimpPrespalare&lt;="111111111";-- temp 30
+		when "001" =&gt; outTimpSpalare &lt;="001101110"; outTimpPrespalare&lt;="111111111";-- temp 60
+		when "010" =&gt; outTimpSpalare &lt;="001000110"; outTimpPrespalare&lt;="111111111";-- temp 40, clatireSupl
+		when "011" =&gt; outTimpSpalare &lt;="001000110"; outTimpPrespalare &lt;="000111100"; -- temp 40, prespalare
+		when "100" =&gt; outTimpSpalare&lt;="011001000"; outTimpPrespalare&lt;="111111111";-- temp 90, clatireSupl
+		when others =&gt; outTimpSpalare&lt;="111111111"; outTimpPrespalare&lt;="111111111";
+		end case;
+	end if;
+end process;
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="BitsToSZU">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+ENTITY BitsToSZU IS
+  PORT (
+  	input: in std_logic_vector(8 downto 0);
+  	sute, zeci, unitati : out std_logic_vector(3 downto 0)
+    );
+END BitsToSZU;
+
+-- transforma un nr pe 9 biti in unitati, zeci si sute
+-- util pt 7 seg
+
+ARCHITECTURE TypeArchitecture OF BitsToSZU IS
+
+BEGIN
+
+process(input)
+
+variable nr, a, b, c: integer:=0;
+
+begin
+	nr := to_integer(unsigned(input));
+	a := nr/100; b:= (nr/10) mod 10; c:= nr mod 10;
+
+	case a is
+		when 0 =&gt; sute &lt;= "0000";
+		when 1 =&gt; sute &lt;= "0001";
+		when 2 =&gt; sute &lt;= "0010";
+		when 3 =&gt; sute &lt;= "0011";
+		when 4 =&gt; sute &lt;= "0100";
+		when 5 =&gt; sute &lt;= "0101";
+		when 6 =&gt; sute &lt;= "0110";
+		when 7 =&gt; sute &lt;= "0111";
+		when 8 =&gt; sute &lt;= "1000";
+		when 9 =&gt; sute &lt;= "1001";
+		when others =&gt; sute &lt;= "1111";
+	end case;
+
+	case b is
+		when 0 =&gt; zeci &lt;= "0000";
+		when 1 =&gt; zeci &lt;= "0001";
+		when 2 =&gt; zeci &lt;= "0010";
+		when 3 =&gt; zeci &lt;= "0011";
+		when 4 =&gt; zeci &lt;= "0100";
+		when 5 =&gt; zeci &lt;= "0101";
+		when 6 =&gt; zeci &lt;= "0110";
+		when 7 =&gt; zeci &lt;= "0111";
+		when 8 =&gt; zeci &lt;= "1000";
+		when 9 =&gt; zeci &lt;= "1001";
+		when others =&gt; zeci &lt;= "1111";
+	end case;
+
+	case c is
+		when 0 =&gt; unitati &lt;= "0000";
+		when 1 =&gt; unitati &lt;= "0001";
+		when 2 =&gt; unitati &lt;= "0010";
+		when 3 =&gt; unitati &lt;= "0011";
+		when 4 =&gt; unitati &lt;= "0100";
+		when 5 =&gt; unitati &lt;= "0101";
+		when 6 =&gt; unitati &lt;= "0110";
+		when 7 =&gt; unitati &lt;= "0111";
+		when 8 =&gt; unitati &lt;= "1000";
+		when 9 =&gt; unitati &lt;= "1001";
+		when others =&gt; unitati &lt;= "1111";
+	end case;
+	
+end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="SegFault">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+ENTITY SegFault IS
+  PORT (
+  	intrare:in std_logic_vector(3 downto 0);
+  	iesire:out std_logic_vector(6 downto 0)
+    );
+END SegFault;
+
+-- 4 biti in 7 biti (gfedcba)
+
+ARCHITECTURE TypeArchitecture OF SegFault IS
+
+BEGIN
+
+process(intrare)
+begin
+	case intrare is
+		when "0000" =&gt; iesire &lt;= "0111111";
+		when "0001" =&gt; iesire &lt;= "0000110";
+		when "0010" =&gt; iesire &lt;= "1011011";
+		when "0011" =&gt; iesire &lt;= "1001111";
+		when "0100" =&gt; iesire &lt;= "1100110";
+		when "0101" =&gt; iesire &lt;= "1101101";
+		when "0110" =&gt; iesire &lt;= "1111101";
+		when "0111" =&gt; iesire &lt;= "0000111";
+		when "1000" =&gt; iesire &lt;= "1111111";
+		when "1001" =&gt; iesire &lt;= "1101111";
+		when others =&gt; iesire &lt;= "1111111";
+	end case;
+end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="DivizorFrecv">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+
+ENTITY DivizorFrecv IS
+					
+  PORT (
+  --Insert input ports below
+ 					-- numar ciclu				 0   1   2   3   4   5          49                 98   99  0   1   2
+    clock      : IN  std_logic;                    -- tactul la 100 Mhz de ex. _|`\_|`\_|`\_|`\_|`\_|`\........_|`\_.............._|`\_|`\_|`\_|`\_|`\
+    div_clk    : out std_logic				-- ceas divizat cu 100        __________________________________|``````````````````````\___________
+    );
+END DivizorFrecv;
+
+--sa fie un numarator, si sa se afiseze pe 7 segment valorile/iesirile =&gt; va numara la frecventa clockului din placuta 100Hz =&gt; 
+--------------------------------------------------------------------------------
+--divizor de frecventa de la 100 Mhz la 1 Mhz de ex.
+
+ARCHITECTURE TypeArchitecture OF DivizorFrecv IS
+
+signal tmp:std_logic_vector (6 downto 0):=(others =&gt;'0');--"0000000"
+BEGIN
+
+process (clock)
+begin
+	if (rising_edge(clock)) then
+		if tmp = ("1100011") then tmp &lt;="0000000";     -- verificam daca am ajuns la al 99'lea ciclu
+		elsif (tmp &lt;= "0110001") then 		-- -- verificam daca am ajuns la al 49'lea ciclu
+			tmp &lt;= tmp + 1;  -- timp de 50 de cicluri clock-ul divizat e '0'
+			div_clk &lt;= '0';
+		else  div_clk &lt;= '1';				-- timp de 50 de cicluri clock-ul divizat e '1'
+			tmp &lt;= tmp + 1;
+	end if;
+	end if;
+end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="Timer60">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
+
+ENTITY Timer60 IS
+  PORT (
+  	clk: in std_logic;
+  	enable: in std_logic;
+  	
+  	TC: out std_logic
+    );
+END Timer60;
+
+ARCHITECTURE TypeArchitecture OF Timer60 IS
+
+BEGIN
+process(clk, enable)
+
+variable count: integer :=0;
+
+begin
+
+if(rising_edge(clk)) then
+	if(enable = '1') then
+		if(count = 60) then
+			count :=0;
+			TC &lt;= '1';
+		else
+			count := count+1;
+			TC &lt;= '0';
+		end if;
+	else
+		count := 0;
+		TC &lt;= '0';
+	end if;
+end if;
+	
+end process;
+
+END TypeArchitecture;
+
+
+</vhdl>
+</project>
