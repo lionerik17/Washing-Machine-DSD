@@ -1,1 +1,1 @@
-A washing machine written in VHDL for Digital Systems Design
+A washing machine written in VHDL for Digital Systems Design.
