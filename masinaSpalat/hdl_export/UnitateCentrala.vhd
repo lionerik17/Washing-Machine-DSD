@@ -66,7 +66,7 @@ Update: process(clock, anulare)
 			end if;
 		end process Update;
 
--- vezi organigrama
+-- check organigrama
 Transitions: process(start, anulare, usa, viteza, mode, modSelectie, prespalare, spalare2, clatireSuplimentara, clatire2, State, gtPrespalare, gtSpalare, gtClatire, gtClatireSuplimentara, gtCentrifuga)
 			begin
 				if(anulare = '1') then nextState <= A_Idle;
